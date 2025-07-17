@@ -11,11 +11,25 @@ if __name__ == '__main__':
 
 #~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.
 
+# Python keywords
+
+# 'False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield'
+
+#~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.
+
 print("\\")
 
 print("Hello", "World")
 
-print("My", "name", "is", "Monty", "Python.", sep="-")
+print("H", "E", "L", "L", "O", sep="-")
+
+print("Monty", "Python.", sep="*", end="*\n")
+
+print("I like \"Monty Python\"")
+
+print("+" + 10 * "-" + "+")
+print(("|" + " " * 10 + "|\n") * 5, end="")
+print("+" + 10 * "-" + "+")
 
 #~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.
 
@@ -51,6 +65,24 @@ print(the_list.count(1) == 3)
 
 #~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.
 
+# 0b1010 is a binary number with a (decimal) value equal to 10.
+print(0b1010)
+
+# 0o123 is an octal number with a (decimal) value equal to 83.
+print(0o123)
+
+# 0x123 is a hexadecimal number with a (decimal) value equal to 291
+print(0x123)
+
+print(3_0000_0000 == 3E8)
+print(3_0000_0000 == 3 * 10**8)
+
+print(0.00_0000000000_0000000001 == 1E-22)
+
+# twenty point twelve times ten raised to the power of eight
+
+2.012E8
+
 print(0.1 + 0.2 == 0.3)
 
 list = [False, True, "2", 3, 4 ]
@@ -68,6 +100,12 @@ vals.append(1)
 
 #~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.
 
+def fun(x):
+    return 1 /(x + 1 / (x + 1/(x + 1/x)))
+
+x = 100
+print("y =", fun(x))
+
 def check_value(x):
     return "Positive" if x > 0 else "Negative" if x < 0 else "Zero"
 
@@ -83,13 +121,40 @@ nums = [1, 2, 3]
 vals = nums
 del vals[1:2]
 
+print(6 // 3)
+print(6. // 4)
+
+print(14 % 4)
+print(14 // 4)
+print(3 * 4)
+print(14 - 12)
+
+x = 11  # User enters 11
+y = 4  # User enters 4
+x = x % y         # 11 % 4 = 3 → x becomes 3
+x = x % y         # 3 % 4 = 3 → x stays 3
+y = y % x         # 4 % 3 = 1 → y becomes 1
+print(y)          # Output is 1
+
 print(3 ** 2 // 2)
+
+x = 1 / 2 + 3 // 3 + 4 ** 2
+# 4 ** 2 = exponentiation = 16
+# 3 // 3 = integer division = 1
+# 1 / 2 = floating-point division = 0.5
+x = 0.5 + 1 + 16  # which equals 17.5
 
 1//3 * 3 ** 0
 4//3
 
 4/2 - 2 ** 1
 4/2 - 2 ** 0
+
+print(2 ** 2 ** 3)
+print("2 ** 3 = 8", "2 ** 8 = 256", sep=";")
+
+print(9 % 6 % 2)
+print("9 % 6 = 3", "3 % 2 = 1", sep=";")
 
 #~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.
 
