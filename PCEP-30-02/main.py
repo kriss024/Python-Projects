@@ -31,9 +31,11 @@ print("+" + 10 * "-" + "+")
 print(("|" + " " * 10 + "|\n") * 5, end="")
 print("+" + 10 * "-" + "+")
 
-#~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.
+print("AB\nC\nDE")
 
-# Lists
+"helloMike".find("Mike")
+
+#~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.
 
 # Create a list of countries
 countries = ['Greece', 'India', 'USA', 'Canada']
